@@ -44,15 +44,15 @@ module Sort_tb;
         .done(done)
     );
 
-    // Clock generation: 10 time unit period
+    
     initial begin
         clk = 0;
         forever #5 clk = ~clk;
     end
 
-    // Stimulus
+    // Sim singsl
     initial begin
-        // Initial states
+        
         rst = 0;
         s   = 0;
         DataIn = 0;
@@ -60,16 +60,16 @@ module Sort_tb;
         Rd  = 0;
         WrInint = 0;
         
-        // To (if keeping active-low reset):
-        rst = 1;       // Not in reset
-        #10 rst = 0;   // Apply reset
-        #10 rst = 1;   // Deassert reset
-
-        #10 s = 1;         // Assert start signal after additional delay (total 30 units)
         
-        // Add more stimulus here if needed...
+        rst = 1;       
+        #10 rst = 0;   
+        #10 rst = 1;   
 
-        #100 $finish;      // End simulation after 100 time units
+        #10 s = 1;         
+        
+      
+
+        #100 $finish;      
     end
 
 endmodule
