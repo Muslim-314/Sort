@@ -17,6 +17,9 @@ The RTL (Register Transfer Level) Verilog files are located at the following pat
 
 ### Ending Point:
 ![Ending Point](EndingPoint.png)
+### Memory Read:
+following is the ouptut of the memory read from address 0 to 7.
+![Memory Read](MemoryRead.png)
 
 [Testbench](https://github.com/Muslim-314/Sort/tree/main/interview.srcs/sim_1/new)
 
