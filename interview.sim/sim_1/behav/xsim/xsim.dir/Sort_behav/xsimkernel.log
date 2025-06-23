@@ -1,0 +1,4 @@
+Running: xsim.dir/Sort_behav/xsimk -simmode gui -wdb Sort_behav.wdb -simrunnum 0 -socket 44165
+Design successfully loaded
+Design Loading Memory Usage: 43952 KB (Peak: 44072 KB)
+Design Loading CPU Usage: 40 ms
