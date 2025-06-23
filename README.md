@@ -13,7 +13,7 @@ The RTL (Register Transfer Level) Verilog files are located at the following pat
 ## 🧪 Simulation
 
 ### Starting Point:
-![Start Point](Start_point.png)
+![Start Point](Starting_point.png)
 
 ### Ending Point:
 ![Ending Point](EndingPoint.png)
