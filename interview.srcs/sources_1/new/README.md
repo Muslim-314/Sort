@@ -8,3 +8,7 @@ The following Verilog files implement the sorting algorithm using a modular desi
 | `Datapath.v`      | Datapath for processing(comparisons and swaps)   |
 | `Sort.v`          | Top-level module    |
 
+## Parameters:
+ N: Data Width
+ L: Address Width
+ K: Length of Array

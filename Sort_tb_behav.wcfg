@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="44541011666666fs"></ZoomStartTime>
-      <ZoomEndTime time="44541711666667fs"></ZoomEndTime>
-      <Cursor1Time time="44541595000000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="47000001fs"></ZoomEndTime>
+      <Cursor1Time time="130000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="163"></NameColumnWidth>
-      <ValueColumnWidth column_width="85"></ValueColumnWidth>
+      <ValueColumnWidth column_width="217"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="29" />
+   <WVObjectSize size="31" />
    <wave_markers>
       <marker label="" time="30000000" />
    </wave_markers>
@@ -56,6 +56,11 @@
       <obj_property name="ElementShortName">Wr</obj_property>
       <obj_property name="ObjectShortName">Wr</obj_property>
    </wvobject>
+   <wvobject type="array" fp_name="/Sort_tb/uut/datapath_inst/mem_inst/mem">
+      <obj_property name="ElementShortName">mem[0:7][7:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[0:7][7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
    <wvobject type="array" fp_name="/Sort_tb/uut/datapath_inst/mem_inst/ADDRS">
       <obj_property name="ElementShortName">ADDRS[2:0]</obj_property>
       <obj_property name="ObjectShortName">ADDRS[2:0]</obj_property>
@@ -64,26 +69,9 @@
       <obj_property name="ElementShortName">done</obj_property>
       <obj_property name="ObjectShortName">done</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/Sort_tb/uut/controller_inst/state">
-      <obj_property name="ElementShortName">state[3:0]</obj_property>
-      <obj_property name="ObjectShortName">state[3:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/Sort_tb/uut/controller_inst/next_state">
-      <obj_property name="ElementShortName">next_state[3:0]</obj_property>
-      <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/Sort_tb/uut/datapath_inst/mem_inst/mem">
-      <obj_property name="ElementShortName">mem[0:7][7:0]</obj_property>
-      <obj_property name="ObjectShortName">mem[0:7][7:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Sort_tb/uut/controller_inst/EA">
-      <obj_property name="ElementShortName">EA</obj_property>
-      <obj_property name="ObjectShortName">EA</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/Sort_tb/uut/controller_inst/EB">
-      <obj_property name="ElementShortName">EB</obj_property>
-      <obj_property name="ObjectShortName">EB</obj_property>
+   <wvobject fp_name="divider185" type="divider">
+      <obj_property name="label">Registers</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/Sort_tb/uut/datapath_inst/A">
       <obj_property name="ElementShortName">A[7:0]</obj_property>
@@ -94,6 +82,26 @@
       <obj_property name="ElementShortName">B[7:0]</obj_property>
       <obj_property name="ObjectShortName">B[7:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider190" type="divider">
+      <obj_property name="label">FSM Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Sort_tb/uut/controller_inst/state">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Sort_tb/uut/controller_inst/next_state">
+      <obj_property name="ElementShortName">next_state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">next_state[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Sort_tb/uut/controller_inst/EA">
+      <obj_property name="ElementShortName">EA</obj_property>
+      <obj_property name="ObjectShortName">EA</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Sort_tb/uut/controller_inst/EB">
+      <obj_property name="ElementShortName">EB</obj_property>
+      <obj_property name="ObjectShortName">EB</obj_property>
    </wvobject>
    <wvobject type="logic" fp_name="/Sort_tb/uut/controller_inst/Li">
       <obj_property name="ElementShortName">Li</obj_property>
