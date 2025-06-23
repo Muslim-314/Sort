@@ -22,8 +22,8 @@
 
 module Sort #(
     parameter N = 8,  // Data width
-    parameter L = 4,  // Address / counter width
-    parameter K = 16   //  length
+    parameter L = 3,  // Address / counter width
+    parameter K = 8   // Sorting size
 )(
     input clk,
     input rst,
@@ -91,4 +91,3 @@ module Sort #(
     );
 
 endmodule
-

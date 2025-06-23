@@ -31,8 +31,12 @@ module Sort_tb;
     wire [7:0] Dataout;
     wire done;
 
-    // Instantiate TopLevel
-    Sort uut (
+    
+    Sort #(
+        .N(8),
+        .L(3),
+        .K(8)
+    ) uut (
         .clk(clk),
         .rst(rst),
         .s(s),
@@ -44,7 +48,7 @@ module Sort_tb;
         .done(done)
     );
 
-    
+    integer i;
     initial begin
         clk = 0;
         forever #5 clk = ~clk;
@@ -66,11 +70,16 @@ module Sort_tb;
         #10 rst = 1;   
 
         #10 s = 1;         
+        wait(done);
+        #10 s = 0;    
+        for(i =0 ; i < 8; i = i+1)begin
+            RAdd = i;
+            Rd = 1;
+            #20;
+            $monitor("Time = %0t | DataOut = %d", $time, Dataout);
+        end
         
-      
-
         #100 $finish;      
     end
 
 endmodule
-

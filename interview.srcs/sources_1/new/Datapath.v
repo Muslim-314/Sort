@@ -93,8 +93,8 @@ module Datapath #(
     
     
     memory #(
-        .N(N),
-        .L(L)
+        .N(8),
+        .L(3)
     ) mem_inst (
         .CLK(Clock),
         .WE(Wr | WrInit),
@@ -122,7 +122,7 @@ module memory #(
     output  [N-1:0] DOUT           // Data output
 );
  
-    reg [N-1:0] mem [0:(1<<L)-1];
+    reg [N-1:0] mem [0:(1<<L)-1]; //2^L locations
 
     //Simplified memory content 
 //     initial begin
@@ -146,23 +146,13 @@ module memory #(
             mem[5] = 8'd75;
             mem[6] = 8'd45;
             mem[7] = 8'd10;
-            mem[8] = 8'd8;
-            mem[9] = 8'd7;
-            mem[10] = 8'd6;
-            mem[11] = 8'd5;
-            mem[12] = 8'd4;
-            mem[13] = 8'd3;
-            mem[14] = 8'd2;
-            mem[15] = 8'd1;
      end
     
     assign DOUT = mem[ADDRS];
     
     always @(posedge CLK) begin
         if (WE)
-            mem[ADDRS] <= DIN;        // Write data
-                   // Read data
+            mem[ADDRS] <= DIN;        
     end
 
 endmodule
-

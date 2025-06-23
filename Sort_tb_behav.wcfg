@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="47000001fs"></ZoomEndTime>
-      <Cursor1Time time="130000000fs"></Cursor1Time>
+      <ZoomStartTime time="1632914889fs"></ZoomStartTime>
+      <ZoomEndTime time="1983417023fs"></ZoomEndTime>
+      <Cursor1Time time="1925000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="163"></NameColumnWidth>
-      <ValueColumnWidth column_width="217"></ValueColumnWidth>
+      <ValueColumnWidth column_width="209"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="31" />
+   <WVObjectSize size="34" />
    <wave_markers>
       <marker label="" time="30000000" />
    </wave_markers>
@@ -38,6 +38,19 @@
    <wvobject type="logic" fp_name="/Sort_tb/s">
       <obj_property name="ElementShortName">s</obj_property>
       <obj_property name="ObjectShortName">s</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/Sort_tb/uut/Rd">
+      <obj_property name="ElementShortName">Rd</obj_property>
+      <obj_property name="ObjectShortName">Rd</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider287" type="divider">
+      <obj_property name="label">OUTPUTs</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/Sort_tb/Dataout">
+      <obj_property name="ElementShortName">Dataout[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Dataout[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="divider125" type="divider">
       <obj_property name="label">MEMORY</obj_property>
