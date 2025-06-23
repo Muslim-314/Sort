@@ -18,6 +18,6 @@ The RTL (Register Transfer Level) Verilog files are located at the following pat
 ### Ending Point:
 ![Ending Point](EndingPoint.png)
 
-[testbench](https://github.com/Muslim-314/Sort/tree/main/interview.srcs/sim_1/new)
+[Testbench](https://github.com/Muslim-314/Sort/tree/main/interview.srcs/sim_1/new)
 
 ---
